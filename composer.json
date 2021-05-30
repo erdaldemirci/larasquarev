@@ -1,0 +1,33 @@
+{
+    "name": "erdaldemirci/larasquarev",
+    "description": "Simple and extensible Foursquare API PHP Client with Laravel Support based on Guzzle 6",
+    "keywords": [
+        "foursquare",
+        "laravel",
+        "client",
+        "api"
+    ],
+    "homepage": "https://github.com/erdaldemirci/larasquarev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Ivanov",
+            "email": "iivannov@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Erdal Demirci",
+            "email": "erdemirr@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.4.0",
+        "guzzlehttp/guzzle": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erdaldemirci\\Larasquarev\\": "src"
+        }
+    }
+}
