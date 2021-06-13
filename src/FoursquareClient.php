@@ -73,7 +73,7 @@ class FoursquareClient extends Client
     {
         $params = array_merge($body, $this->getAuth());
 
-        return $this->apiUrl . '/' . $endpoint . '?' . http_build_query($params);
+        return $this->apiUrl . '/' . $endpoint . '?' . urldecode(http_build_query($params));
     }
 
     private function getAuth()
