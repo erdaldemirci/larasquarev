@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b1a88c5-59d8-4783-9a64-b86490be4dbe" name="Default Changelist" comment="added .gitignore">
+    <list default="true" id="8b1a88c5-59d8-4783-9a64-b86490be4dbe" name="Default Changelist" comment="added urldecode on http_build_query for getUri">
+      <change beforePath="$PROJECT_DIR$/.idea/larasquarev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larasquarev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +17,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1tF7NovOm1rru5rKastnHAf3Nyu" />
   <component name="ProjectViewState">
@@ -41,6 +54,8 @@
       <workItem from="1622354179770" duration="161000" />
       <workItem from="1622573009866" duration="178000" />
       <workItem from="1622966646490" duration="590000" />
+      <workItem from="1623584308590" duration="218000" />
+      <workItem from="1623584670924" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="added .gitignore">
       <created>1622353093951</created>
@@ -49,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622353093951</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added urldecode on http_build_query for getUri">
+      <created>1623584412909</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623584412909</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .gitignore" />
+    <MESSAGE value="added urldecode on http_build_query for getUri" />
+    <option name="LAST_COMMIT_MESSAGE" value="added urldecode on http_build_query for getUri" />
   </component>
 </project>

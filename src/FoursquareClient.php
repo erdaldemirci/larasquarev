@@ -3,7 +3,6 @@
 namespace Erdaldemirci\Larasquarev;
 
 
-
 use GuzzleHttp\Client;
 
 class FoursquareClient extends Client
@@ -33,7 +32,6 @@ class FoursquareClient extends Client
     /**
      * A date that represents the "version" of the API
      * if no version is passed the latest version will be used
-
      * @see https://developer.foursquare.com/overview/versioning
      *
      * @var string
@@ -45,12 +43,13 @@ class FoursquareClient extends Client
 
         $this->clientId = $clientId;
         $this->clientSecret = $clientSecret;
+        $this->version = date('Ymd');
 
-        if($apiUrl)
+        if ($apiUrl)
             $this->apiUrl = $apiUrl;
 
-        if(!$version)
-            $this->version = date('Ymd');
+        if (!is_null($version))
+            $this->version = $version;
 
 
         parent::__construct();
@@ -73,15 +72,22 @@ class FoursquareClient extends Client
     {
         $params = array_merge($body, $this->getAuth());
 
-        return $this->apiUrl . '/' . $endpoint . '?' . urldecode(http_build_query($params));
+        $paramsJoined = [];
+
+        foreach ($params as $param => $value) {
+            $paramsJoined[] = "$param=$value";
+        }
+        $query = implode('&', $paramsJoined);
+
+        return $this->apiUrl . '/' . $endpoint . '?' . $query;
     }
 
     private function getAuth()
     {
         return [
-            'client_id' => $this->clientId,
+            'client_id'     => $this->clientId,
             'client_secret' => $this->clientSecret,
-            'v' => $this->version
+            'v'             => $this->version
         ];
     }
 
