@@ -75,6 +75,20 @@ class Foursquare
         return $result->response->venue;
     }
 
+    /**
+     * Get a single venue photos
+     *
+     * @param string $venueId
+     * @return array
+     */
+    public function venuePhotos($venueId)
+    {
+
+        $result = $this->client->consume("venues/$venueId/photos");
+
+        return $result->response->photos;
+    }
+
 
     /**
      * Make a search for a list of venues
