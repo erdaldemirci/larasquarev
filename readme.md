@@ -39,8 +39,10 @@ You need to add your Foursquare client ID and secret in `config\services.php`
 
 ``` php
 'foursquare' => [
-    'clientId' => YOUR_FOURSQUARE_CLIENT_ID,
+    'clientId'.    => YOUR_FOURSQUARE_CLIENT_ID,
     'clientSecret' => YOUR_FOURSQUARE_CLIENT_SECRET
+    'version'      => 20200101, //example
+    'intent'       => 'global', //global or null
 ]
 ```
 
