@@ -16,7 +16,6 @@ class Foursquare
      */
     protected $client;
 
-
     protected $filter;
 
 
@@ -26,7 +25,7 @@ class Foursquare
         if (!isset($config['clientId']) || !isset($config['clientSecret']))
             throw new \InvalidArgumentException('Expected values for clientId && clientSecret');
 
-        $this->client = new FoursquareClient($config['clientId'], $config['clientSecret'], $config['apiUrl'], $config['version']);
+        $this->client = new FoursquareClient($config['clientId'], $config['clientSecret'], $config['apiUrl'], $config['version'], $config['intent']);
     }
 
 

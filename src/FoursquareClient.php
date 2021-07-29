@@ -38,12 +38,19 @@ class FoursquareClient extends Client
      */
     protected $version;
 
-    public function __construct($clientId, $clientSecret, $apiUrl = null, $version = null)
+    /**
+     * intent : global | null
+     * @var string
+     */
+    protected $intent;
+
+    public function __construct($clientId, $clientSecret, $apiUrl = null, $version = null, $intent = null)
     {
 
         $this->clientId = $clientId;
         $this->clientSecret = $clientSecret;
         $this->version = date('Ymd');
+        $this->intent = $intent;
 
         if ($apiUrl)
             $this->apiUrl = $apiUrl;
